@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script src="jquery-3.6.3.js"></script>
+        <script type="text/javascript">
+            $ (document).ready(function(){
+                $ ("div").dblclick(function(){
+                    $ ("#kotak1").dblclick(function(){
+                      $ ("#kotak1").addClass("warna");
+                    $ ("#kotak2").dblclick(function(){
+                      $ ("#kotak2").addClass("warna2");
+                    $ ("#kotak3").dblclick(function(){
+                      $ ("#kotak3").addClass("warna3");
+                    $ ("#kotak4").dblclick(function(){
+                    $ ("#kotak4").addClass("warna4")
+                    })
+                    })
+                    })
+                    })
+                })
+            })
+        </script>
+        <style>
+             div {
+            width: 70px;
+            height: 70px;
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 0 10px;
+            float: left;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .warna {background-color: rgb(25, 167, 119);}
+        .warna2 {background-color: rgb(125, 41, 221);}
+        .warna3 {background-color: rgb(39, 98, 187);}
+        .warna4 {background-color: rgb(199, 31, 45);}
+        </style>
+    </head>
+    <body>
+        <h1>EVENT DOUBLE CLICK</h1>
+        <p>Click 2x pada kotak untuk mengubah warnanya</p>
+        <div id="kotak1">Kotak 1</div>
+        <div id="kotak2">Kotak 2</div>
+        <div id="kotak3">Kotak 3</div>
+        <div id="kotak4">Kotak 4</div>
+    </body>
+</html>
