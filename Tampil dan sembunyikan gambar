@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Tampilkan dan Sembunyikan Gambar</title>
+        <script src="jquery-3.6.3.js"></script>
+        <script type="Text/javascript">
+             $(document).ready(function () {
+            $(".sembunyi").click(function () {
+                $("#foto").hide("slow")
+            });
+            $(".sembunyi2").click(function () {
+                $("#foto2").hide("slow")
+            });
+            $(".tampil").click(function () {
+                $("#foto").show("slow")
+            });
+            $(".tampil2").click(function () {
+                $("#foto2").show("slow")
+            });
+            
+        });
+        </script>
+    </head>
+    <body>
+        <h1>TAMPILKAN DAN SEMBUNYIKAN GAMBAR</h1>
+        Note : <br>Tekan (Tampilkan) untuk memunculkan gambar
+        <br> Tekan (sembunyikan) untuk menyembunyikan gambar
+        <br>
+        <br>
+        <button class="sembunyi">Sembunyikan</button>
+        <button class="tampil">Tampilkan</button>
+        <p><img src="kuromi.png" id="foto" alt="Gambar Kuromi"></p>
+        <br>
+            <button class="sembunyi2">Sembunyikan</button>
+            <button class="tampil2">Tampilkan</button>
+            <p><img src="cinnamoroll.png" id="foto2" alt="Gambar Cinnamoroll"></p>
+    </body>
+</html>
